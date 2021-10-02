@@ -1,0 +1,278 @@
+.grid-row {
+    height: 120px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-color: rgb(47, 51, 54);
+    clear: both;
+}
+
+.layout{
+    background-color: black;
+    margin-left: 50px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: rgb( 110, 118, 125);
+    margin-right: 0px;
+}
+
+.background{
+    background-color: black;
+}
+
+.links-height{
+    height: 70px;
+}
+
+.height{
+    height: 1000px;
+
+}
+
+.title{
+    color: white;
+}
+
+
+.right {
+    float: right;
+}
+
+
+.top-margin{
+    margin-top: 3px;
+
+}
+
+.top-margin-12{
+    margin-bottom: 12px;
+
+}
+
+.r12{
+        margin-right:12px
+}
+
+.r16{
+        margin-right:16px
+}
+
+right-margin-12{
+        margin-right:12px
+
+}
+
+
+.left-margin {
+
+    margin-left: 16px
+}
+
+.bookmarker{
+    text-size: 13px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: gray;
+    padding-bottom: 12px;}
+
+.bookmarks{
+    color: white;
+    text-size: 13px;
+}
+
+.bookmark-image{
+       float: left;
+       margin-left: 16px;
+       width: 48px;
+       height: 48px;
+       border-radius: 20px;
+}
+
+.bookmark-border{
+    size: 200px;
+}
+
+.margin-left{
+       margin-left: 16px;
+       margin-bottom: 0px;
+}
+
+
+.twitter-search{
+    width: 600px;
+    color: white;
+    background-color: #484848;
+    border-radius: 50px;
+
+}
+
+.rounded-corners{
+    border-radius: 20px;
+    width: 30px;
+
+}
+
+.rounded{
+    border-radius: 20px;
+
+}
+
+.news-image{
+    float: right;
+    margin-right: 16px;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+
+.no-image{
+    height: 80px;
+
+}
+
+
+
+.border{
+    border-bottom: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: rgb(29,161,242);
+}
+
+.big-border{
+    margin-left: 80px;
+    margin-right: 200px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+
+}
+
+.blue-hightlight{
+
+    padding-bottom: 16px;
+
+    color: rgb(29,161,242);
+
+}
+
+.author{
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+.text-padding{
+    padding: 16px;
+}
+
+.icon-number-margin{
+    margin-right: 120px;
+
+}
+
+
+.icon-margin{
+    margin-right: 12px;
+
+}
+
+
+
+.other-links{
+    color: rgb( 110, 118, 125);
+    size: 15px;
+
+}
+
+.border-bottom{
+     border-width: 20px 30px 20px 30px;
+     border-color: #7070ff;
+}
+
+.topic-and-tweet-number{
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    color: rgb( 110, 118, 125);
+}
+
+.handle-margin{
+    margin-left: 80px;
+    margin-right: 100px;
+
+    margin-top: 20px;
+    color: white;
+}
+
+big-image{
+    border-radius: 10px;
+    margin-bottom: 24px;
+
+    width: 504px;
+    height: 264px;
+
+}
+
+.handle{
+    margin-top: 20px;
+    margin-left: 0px;
+    color: gray;
+}
+
+.gray{
+    color: gray;
+
+}
+
+
+.red{
+
+    color: red;
+}
+
+.no-underline{
+     text-decoration: none;
+
+}
+
+.tiny{
+    width: 15px;
+    height: 15px;
+}
+
+.no-top-bottom-margin{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.white-and-bold{
+    color:white;
+    font-weight: bold;
+}
+
+.divider{
+    border-style: solid;
+     border-width: 5px 2px 2px 2px;
+    color: rgb( 110, 118, 125);
+}
+
+
+
+
+.float-left-pad-right{
+    padding-right: 16px;
+    float: left;
+}
+
+
+
+.trending{
+    width: 400px;
+}
+
+
+
+
+
