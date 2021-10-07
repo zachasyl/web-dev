@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="explore.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!--    I used bootstrap columns to make three columns.-->
+<!--    The left column uses lists and the right col uses lists.-->
+<!--    The center col was originally broken up into lists and columns.-->
+<!--    To make this exactly like the sample, I would have to not use bootstrap cols.-->
+<!--    My right column was originally subdivided into 3 cols and is now-->
+<!--    ONLY lists to more closely match the specifications but I did nit
+        have time to not use cols and I think it looks pretty nice and most sizes..-->
+
+
+
+
+
+
+</head>
+<body>
+
+<!--this row is made up of 3 columns left bar, middle content, right bar-->
+<div class="row ">
+
+<!--    this is the left col-->
+    <div class="col-2 mt-2 ms-3 ">
+
+        <ul class="">
+
+            <li class="list-group-item  "><i class="fab fa-twitter"></i></li>
+            <li class="list-group-item"><i class="fas fa-home"></i> <span class = "d-none d-lg-inline-block">Home</span></li>
+            <li class="list-group-item active"><i class="fas fa-hashtag"></i>  <span class = "d-none d-lg-inline-block">Explore</span></li></li>
+            <li class="list-group-item"><i class="fas fa-bell"></i>  <span class = "d-none d-lg-inline-block">Notifications</span></li></li>
+            <li class="list-group-item"><i class="fas fa-envelope"></i>  <span class = "d-none d-lg-inline-block">Messages</span></li></li>
+
+            <li class="list-group-item "><i class="fas fa-bookmark"></i>  <span class = "d-none d-lg-inline-block">Bookmarks</span></li></li>
+            <li class="list-group-item "><i class="fas fa-list"></i>  <span class = "d-none d-lg-inline-block">List</span></li>
+            <li class="list-group-item "><i class="fas fa-user"></i>  <span class = "d-none d-lg-inline-block">Profile</span></li>
+            <li class="list-group-item ">
+            <span class="fa-stack">
+              <i class="fas fa-circle fa-stack-1x"></i>
+              <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse  "></i>
+            </span> <span class = "d-none d-lg-inline-block ">More</span>
+
+                        </li>
+
+
+        </ul>
+
+
+</span>
+
+
+
+
+<!--this is the middle column-->
+    </div>
+    <div class="col bg-color-yellow mt-2 ms-5 wrap">
+        <div class=" ">
+
+            <div class = "position-relative wrap">
+<!--the div class is a parent so that it can be relative for the magnify glass pos-->
+                <input id="text-fields-username" placeholder="Search Twitter" class = "search-bar  " >
+                <span>
+                <i class="fas fa-search search-magni position-absolute"></i>
+                </span>
+
+                <a href = "exploresettings.html"><i class="fas fa-cog ps-3 position-relative"></i></a>
+            </div>
+
+
+            <ul class="nav nav-tabs mt-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-none d-sm-inline-block" href="#">Entertainment</a>
+                </li>
+            </ul>
+
+
+
+            <ul class="position-relative p-0 rounded">
+
+<!--reach list has a row with two columns-->
+                <li class = "list-group-item">
+
+                    <div class = " row position-relative">
+                        <img class = "main-image" src = "followers/starship.jpg">
+                        <span class = "position-absolute image-text">SpaceX's Starship</span>
+                    </div>
+                </li>
+
+                <li class = "list-group-item">
+                    <div class = "row">
+                    <div class="col bg-color-yellow">
+                        <div class = "gray">Web Development</div>
+                        <div class><span class = "bold">ReactJS</span> <i class="fas fa-check-circle"></i> <span class = "gray">-2h</span></div>
+                        <div class = "bold">React.js is a component based front end library that
+                        makes it very easy to build Single Page Applications or SPAs</div>
+                    </div>
+                    <div class="col bg-color-yellow">
+
+                        <img class = "float-right news-image" src = "react.png">
+                    </div>
+                    </div>
+
+
+                </li>
+                <li class="list-group-item">
+                    <div class = "row">
+                        <div class="col bg-color-yellow">
+                            <div class><span class = "bold">JavaScript</span> <i class="fas fa-check-circle"></i> <span class = "gray">-2h</span></div>
+                            <div class = "bold">JavaScript is a programming lanaugae that can run on browsers as well as desktops</div>
+                            <div class = "gray">12k Tweets</div>
+
+                        </div>
+                        <div class="col bg-color-yellow">
+
+                            <img class = "float-right news-image" src = "news/javascript.png">
+                        </div>
+                    </div>
+
+                </li>
+                <li class="list-group-item">
+                <div class = "row">
+                    <div class="col bg-color-yellow">
+                        <div class = "gray">Web Development </div>
+                        <div class = "bold">jQuery</div>
+                        <div class = "gray">123k Tweets</div>
+                    </div>
+                    <div class="col bg-color-yellow">
+
+                        <img class = "float-right news-image" src = "news/jquery.jpeg">
+                    </div>
+                </div>
+
+
+            </li>  <li class="list-group-item">
+                <div class = "row">
+                    <div class="col bg-color-yellow">
+                        <div class = "gray">Web Development </div>
+                        <div> <span class = "bold">NodeJs</span> <i class="fas fa-check-circle"></i> <span class = "gray">-2h</span></div>
+                        <div class = "gray">123k Tweets</div>
+                    </div>
+                    <div class="col bg-color-yellow">
+
+                        <img class = "float-right news-image" src = "news/node.png">
+                    </div>
+                </div>
+
+
+            </li>
+
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="col  mt-2 d-none d-lg-inline-block position-relative me-3">
+        <ul class="">
+            <li class="list-group-item  ">
+                <span class = "bold-only">Who to follow</span>
+                <!--        The text will move relative from the list class-->
+            <li class="list-group-item absolute">
+            <span>
+            <img class = "tiny-image mt-2 mb-2 " src = "followers/java.jpg">
+            </span>
+                <div class = "display align-top ">
+                    <div class="row  ">
+                <span class = "ms-2 bold-only">
+                    Java
+                    <i class="fas fa-check-circle align-left"></i>
+                </span>
+
+                    </div>
+                    <div class="row  ms-2 gray ">
+                        @Java
+                    </div>
+                </div>
+
+                <button class="btn btn-primary override-bs mt-2 mb-2 ">
+                    Follow
+                </button>
+
+            </li>
+
+
+            <!--        The text will move relative from the list class-->
+            <li class="list-group-item absolute">
+            <span>
+            <img class = "tiny-image mt-2 mb-2 " src = "followers/relativity.jpg">
+            </span>
+                <div class = "display align-top ">
+                    <div class="row  ">
+                <span class = "ms-2 bold-only">
+                    Relativity Space
+                    <i class="fas fa-check-circle align-left"></i>
+                </span>
+
+                    </div>
+                    <div class="row  ms-2 gray ">
+                        @relativityspace
+                    </div>
+                </div>
+
+                <button class="btn btn-primary override-bs mt-2 mb-2 ">
+                    Follow
+                </button>
+
+            </li>
+
+            <!--        The text will move relative from the list class-->
+            <li class="list-group-item absolute">
+            <span>
+            <img class = "tiny-image mt-2 mb-2 " src = "followers/nasa.jpg">
+            </span>
+                <div class = "display align-top ">
+                    <div class="row  ">
+                <span class = "ms-2 bold-only">
+                    Nasa
+                    <i class="fas fa-check-circle align-left"></i>
+                </span>
+
+                    </div>
+                    <div class="row  ms-2 gray ">
+                        @Nasa
+                    </div>
+                </div>
+
+                <button class="btn btn-primary override-bs mt-2 mb-2 ">
+                    Follow
+                </button>
+
+            </li>
+
+            <!--        The text will move relative from the list class-->
+            <li class="list-group-item absolute">
+            <span>
+            <img class = "tiny-image mt-2 mb-2 " src = "followers/tesla.jpg">
+            </span>
+                <div class = "display align-top ">
+                    <div class="row  ">
+                <span class = "ms-2 bold-only">
+                    Testla
+                    <i class="fas fa-check-circle align-left"></i>
+                </span>
+
+                    </div>
+                    <div class="row  ms-2 gray ">
+                        @Tesla
+                    </div>
+                </div>
+
+                <button class="btn btn-primary override-bs mt-2 mb-2 ">
+                    Follow
+                </button>
+
+            </li>
+
+
+        </ul>
+
+    </div>
+    </div>
+</div>
+
+
+</div>
+
+
+</body>
+</html>
