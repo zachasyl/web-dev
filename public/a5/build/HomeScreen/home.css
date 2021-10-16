@@ -1,0 +1,106 @@
+
+
+
+.handle-margin{
+    margin-left: 80px;
+    margin-right: 100px;
+
+    margin-top: 20px;
+    color: white;
+}
+
+.tiny-image{
+    height: 50px;
+    width: 40px;
+    border-radius: 5px;
+
+}
+
+.search-bar{
+    border-radius: 60px;
+    width:         500px;
+    padding-left: 35px;
+}
+
+
+.rounded{
+        border-radius: 5px;
+
+}
+
+
+.align{
+vertical-align:middle;
+
+.float-left{
+    float: left;
+}
+
+.wrap{
+min-width: 200px;
+
+}
+
+}
+.align-top{
+    position: relative;
+    top: 8px;
+}
+
+.align-left{
+    position: relative;
+    top:0px;
+}
+
+.svgWrapper{
+  position:absolute;
+  top:21px;
+  left:15px;
+}
+
+.gray{
+    color: gray;
+}
+
+.bold{
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+
+}
+
+
+
+.no-border{
+    border-style: none;
+}
+
+.bold-only{
+     font-weight: bold;
+
+}
+
+
+.display{
+    display: inline-block;
+}
+
+
+.search-magni{
+    left: 14px;
+    margin-top: 6px;
+}
+
+.float-right{
+    float: right;
+}
+
+.active{
+    color: green;
+}
+
+.btn-primary.override-bs {
+    border-radius: 20px;
+    float: right;
+    height: 50px;
+}
