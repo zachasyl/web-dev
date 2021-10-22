@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+
+
+<!--REMOVAL this script only removes hello world 2 because thats a H1 that also has id hello-->
+<script>
+$(function() {
+ $("H1#hello").remove()
+})
+</script>
+
+<H1>Hello World 1</H1>
+<H1 id="hello">Hello World 2</H1>
+
+
+<!-- APPEND all h1 gets a ! appended, and the id quiz changes to quiz change-->
+<script>
+
+
+scores = [1,2,3,4]
+document.write(scores)
+
+<!--INTERPOLATION SELECTOR SINGLE ` can write html here and the value of scores using jquery selector -->
+document.write(`
+<br>
+hello  scores  ${scores}
+`)
+
+<!--E6 destructuing feature-->
+var list = [1,2,3]
+var [a ,,b] = list
+<!--b will be 3-->
+console.log(b)
+
+<!--IIFE immediately invoked function expression-->
+$(function() {
+$("#quiz").html("quiz change")
+$("h1").append("!")
+})()
+
+</script>
+
+<h1 id="quiz">quiz</h1>
+
+<!--this uses js from jqueryscriptappending.js-->
+
+<span id = "result"></span>
+<!--script src must come after at end of body-->
+<script src="jqueryscriptappending.js"></script>
+
+
+</body>
+</html>

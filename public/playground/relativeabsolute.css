@@ -1,0 +1,9 @@
+.pos-absolute-10 {
+    position: absolute;
+    top: 10px;
+}
+
+.pos-absolute-40 {
+    position: absolute;
+    top: 40px;
+}
