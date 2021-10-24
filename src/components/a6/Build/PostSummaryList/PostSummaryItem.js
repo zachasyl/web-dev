@@ -22,7 +22,7 @@ const PostSummaryItem = (
                         <div className><span className = "bold">{posts.userName}</span> <i className="fas fa-check-circle"></i> <span className = "gray">{posts.time}</span></div>
                         <div className = "bold">{posts.title}</div>
                     </div>
-                    <div className=" ">
+                    <div className="col ms-5 ">
 
                         <img className = "news-image" src = {posts.image}></img>
                     </div>
