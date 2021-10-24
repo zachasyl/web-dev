@@ -2,10 +2,11 @@ import './vendors/bootstrap/css/bootstrap.min.css';
 import HelloWorld from "./components/a6/HelloWorld";
 import Practice from "./components/a6/Practice";
 import Build from "./components/a6/Build";
+import WhoToFollowList2 from  "./components/a6/Build/WhoToFollowList2";
+import ExploreScreen from  "./components/a6/Build/ExploreScreen/ExploreScreen.js";
+
 import {BrowserRouter, Route} from "react-router-dom";
-
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
-
 
 function App() {
   return (
@@ -20,6 +21,14 @@ function App() {
                     <Route path="/a6/build" exact={true}>
                         <Build/>
                     </Route>
+                   <Route path="/a6/twitter/home" exact={true}>
+                       <WhoToFollowList2/>
+                   </Route>
+                   <Route path="/a6/twitter/explore" exact={true}>
+                        <ExploreScreen/>
+                   </Route>
+
+
                 </div>
             </BrowserRouter>
 

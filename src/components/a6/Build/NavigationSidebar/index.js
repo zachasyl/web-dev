@@ -1,5 +1,6 @@
 import React from "react";
 
+import {Link} from "react-router-dom";
 
 const NavigationSidebar = (
     {
@@ -20,11 +21,24 @@ const NavigationSidebar = (
     return(
 
         <div>
-            <div className="list-group">
-                <a className="list-group-item" href="/">
-                    <i className="fab fa-twitter"></i></a>
-                    <li className="list-group-item inactive-Home "><i className="fas fa-home no-decoration"></i> <span className = "d-none d-lg-inline-block"><a className = "no-decoration" href = "../HomeScreen/home.html" >Home</a></span></li>
-                    <li className="list-group-item inactive-Explore "><i className="fas fa-hashtag"></i>  <span className = "d-none d-lg-inline-block"><a className = "no-decoration" href="../ExploreScreen/explore.html">Explore</a></span></li>
+            <div className="list-group mt-2">
+
+                <Link to="/a6/"
+                    className="list-group-item">
+                    <i className="fab fa-twitter"></i> Practice
+                </Link>
+
+
+                 <Link to="/a6/twitter/home"
+                      className="list-group-item">
+                      <i className="fas fa-home no-decoration"></i> Home
+                 </Link>
+                 <Link to="/a6/twitter/explore"
+                       className="list-group-item">
+                       <i className="fas fa-hashtag"></i> Explore
+                 </Link>
+
+
 
                     <li className="list-group-item"><i className="fas fa-bell"></i>  <span className = "d-none d-lg-inline-block">Notifications</span></li>
                     <li className="list-group-item"><i className="fas fa-envelope"></i>  <span className = "d-none d-lg-inline-block">Messages</span></li>

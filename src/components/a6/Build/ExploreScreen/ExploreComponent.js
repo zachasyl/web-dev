@@ -34,7 +34,7 @@ const ExploreComponent = () => {
                 <li className = "list-group-item">
 
                                     <div className = " row position-relative">
-                                        <img className = "main-image" src = "followers/starship.jpg"></img>
+                                        <img className = "main-image" src = "../../../Images/starship.jpg"></img>
                                         <span className = "position-absolute image-text">SpaceX's Starship</span>
                                     </div>
                                 </li>
