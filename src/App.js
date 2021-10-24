@@ -2,7 +2,7 @@ import './vendors/bootstrap/css/bootstrap.min.css';
 import HelloWorld from "./components/a6/HelloWorld";
 import Practice from "./components/a6/Practice";
 import Build from "./components/a6/Build";
-import WhoToFollowList2 from  "./components/a6/Build/WhoToFollowList2";
+import WhoToFollowList2 from  "./components/a6/Build/HomeScreen/HomeScreen.js";
 import ExploreScreen from  "./components/a6/Build/ExploreScreen/ExploreScreen.js";
 
 import {BrowserRouter, Route} from "react-router-dom";

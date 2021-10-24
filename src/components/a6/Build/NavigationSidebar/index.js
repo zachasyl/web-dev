@@ -6,17 +6,8 @@ const NavigationSidebar = (
     {
        active = 'explore'
     }) => {
-//
-// if (active == 'home'){
-//            const change = $('no-decoration');
-//            change.attr('className', 'active');
-//
-//            }
-// if (active == 'explore'){
-//            const change = $('no-decoration');
-//            change.attr('className', 'active');
-//
-//            }
+
+
 
     return(
 
@@ -30,11 +21,13 @@ const NavigationSidebar = (
 
 
                  <Link to="/a6/twitter/home"
-                      className="list-group-item">
+                      className={`list-group-item ${active === 'home' ? 'active' : 'explore'}`}>
+
                       <i className="fas fa-home no-decoration"></i> Home
                  </Link>
                  <Link to="/a6/twitter/explore"
-                       className="list-group-item">
+                       className={`list-group-item ${active === 'explore' ? 'active' : 'home'}`}>
+
                        <i className="fas fa-hashtag"></i> Explore
                  </Link>
 

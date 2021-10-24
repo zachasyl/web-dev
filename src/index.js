@@ -7,6 +7,7 @@ import HelloWorld from "./helloworld.js";
 import List from "./list.js";
 import names from './names.json';
 import NavigationExample from './NavigationExample.js'
+<link type="text/css" rel="stylesheet" href="../a6.css" />
 
 
 ReactDOM.render(

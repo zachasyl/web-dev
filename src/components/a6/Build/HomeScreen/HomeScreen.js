@@ -3,7 +3,11 @@ import NavigationSidebar from "../NavigationSidebar";
 import HomeComponent from "../WhoToFollowList2/index.js";
 import WhoToFollowList from "../WhoToFollowList";
 
-const HomeScreen = () => {
+
+const HomeScreen = (
+ {
+       active = 'home'
+      }) => {
     return(
         <div className="row mt-2">
             <div className="col-2 col-md-2 col-lg-1 col-xl-2">
