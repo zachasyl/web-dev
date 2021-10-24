@@ -1,6 +1,6 @@
 const PostSummaryItem = (
     {
-        post = {
+        posts = {
             "topic": "Web Development",
             "userName": "ReactJS",
             "time": "2h",
@@ -18,13 +18,13 @@ const PostSummaryItem = (
 <li className = "list-group-item">
                     <div className = "row">
                     <div className="col ">
-                        <div className = "gray">{post.topic}</div>
-                        <div className><span className = "bold">{post.userName}</span> <i className="fas fa-check-circle"></i> <span className = "gray">{post.time}</span></div>
-                        <div className = "bold">{post.title}</div>
+                        <div className = "gray">{posts.topic}</div>
+                        <div className><span className = "bold">{posts.userName}</span> <i className="fas fa-check-circle"></i> <span className = "gray">{posts.time}</span></div>
+                        <div className = "bold">{posts.title}</div>
                     </div>
                     <div className=" ">
 
-                        <img className = "news-image" src = {post.image}></img>
+                        <img className = "news-image" src = {posts.image}></img>
                     </div>
                     </div>
 
