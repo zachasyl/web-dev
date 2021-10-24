@@ -71,8 +71,6 @@ import React from 'react';
 //export default List
 
 
-
-
 //import names from './names.json';
 // the import is done in the parent index.js instead.
 const List = ({names}) =>{

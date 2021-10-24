@@ -10,10 +10,12 @@ import NavigationExample from './NavigationExample.js'
 
 ReactDOM.render(
 //  <h1>Hello World123!</h1>,
-//<HelloWorld/>,
+//  <HelloWorld/>,
 //  <List/>,
-//    <List names = {names}/>,
-   <NavigationExample/>,
+//  <List names = {names}/>,
+//  <NavigationExample/>,
+ <App />,
+
   document.getElementById('root')
 );
 
