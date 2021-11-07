@@ -14,11 +14,11 @@ const Practice = () => {
             <Styles/>
            <Classes/>
             <TodoList/>
+         <h1>Assignment 6</h1>
 
-          <Link to="/a6/twitter/home">
+          <Link to="/a6/">
 
-              Hello
-          </Link> |
+practice          </Link> |
           <Link to="/a6/twitter/home">
               Build
           </Link>

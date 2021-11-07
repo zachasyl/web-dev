@@ -11,18 +11,18 @@ const NavigationSidebar = (
         <div>
             <div className="list-group mt-2">
 
-                <Link to="/a6/"
+                <Link to="/a7/"
                     className="list-group-item">
                     <i className="fab fa-twitter"></i> Practice
                 </Link>
 
 
-                 <Link to="/a6/twitter/home"
+                 <Link to="/a7/twitter/home"
                       className={`list-group-item ${active === 'home' ? 'active' : 'explore'}`}>
 
                       <i className="fas fa-home no-decoration"></i> Home
                  </Link>
-                 <Link to="/a6/twitter/explore"
+                 <Link to="/a7/twitter/explore"
                        className={`list-group-item ${active === 'explore' ? 'active' : 'home'}`}>
 
                        <i className="fas fa-hashtag"></i> Explore
