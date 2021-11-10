@@ -1,12 +1,15 @@
 import React from "react";
 import WhoToFollowListItem from "./WhoToFollowListItem";
-import who from "./who"
+// import who from "./who"
+import {useSelector} from "react-redux";
 
 //The WhoToFollowList function should iterate over the who array
 //and use the function WhoToFollowListItem to generate the list
 //shown above.
 
 const WhoToFollowList = () => {
+    const who = useSelector((state) => state);
+
     return (
             <ul class="list-group">
              {

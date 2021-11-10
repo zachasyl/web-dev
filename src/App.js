@@ -27,8 +27,8 @@ function App() {
                     <Route path="/a6/build" exact={true}>
                         <Build/>
                     </Route>
-                   <Route path="/a6/twitter/home" exact={true}>
-                       <HomeScreen/>
+                   <Route path="/a6/twitter/home" component={HomeScreen}>
+
                    </Route>
                    <Route path="/a6/twitter/explore" exact={true}>
                         <ExploreScreen/>
