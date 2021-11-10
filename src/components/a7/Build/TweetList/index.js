@@ -1,24 +1,30 @@
 import React from "react";
-import WhoToFollowListItem from "./WhoToFollowListItem";
-import who from "./who"
+import {useSelector} from "react-redux";
+import TweetListItem from "./TweetListItem";
+
 
 //The WhoToFollowList function should iterate over the who array
 //and use the function WhoToFollowListItem to generate the list
 //shown above.
 
-const WhoToFollowList = () => {
+const selectAllTweets = (state) => state.tweets;
+
+
+const TweetList = () => {
+    const tweets = useSelector(selectAllTweets);
+
     return (
             <ul class="list-group">
              {
-                  who.map(who => {
+                 tweets.map(tweet => {
                       return(
-                          <WhoToFollowListItem who={who}/> );
+                          <TweetListItem tweet={tweet}/> );
                   })
               }
 
             </ul>
 ); }
-export default WhoToFollowList;
+export default TweetList;
 
 
 

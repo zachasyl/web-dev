@@ -1,6 +1,9 @@
+
 import './vendors/bootstrap/css/bootstrap.min.css';
 import HelloWorld from "./components/a6/HelloWorld";
 import Practice from "./components/a6/Practice";
+
+
 import Practice7 from "./components/a7/Practice";
 import Build from "./components/a6/Build";
 import Build7 from "./components/a7/Build";
@@ -8,8 +11,14 @@ import Build7 from "./components/a7/Build";
 import HomeScreen from  "./components/a6/Build/HomeScreen/HomeScreen.js";
 import ExploreScreen from  "./components/a6/Build/ExploreScreen/ExploreScreen.js";
 
+
+import who from "./reducers/who";
+import {Provider} from "react-redux";
+
+
+
+
 import {BrowserRouter, Route} from "react-router-dom";
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
 
 
 function App() {

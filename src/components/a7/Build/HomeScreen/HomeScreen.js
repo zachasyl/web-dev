@@ -1,8 +1,8 @@
 import React from "react";
 import NavigationSidebar from "../NavigationSidebar";
-import HomeComponent from "../WhoToFollowList2/index.js";
+import TweetList from "../TweetList/index.js";
 import WhoToFollowList from "../WhoToFollowList";
-
+import PostSummaryList from "../PostSummaryList";
 
 const HomeScreen = (
  {
@@ -15,10 +15,13 @@ const HomeScreen = (
             </div>
             <div className="mt-2 col-10 col-md-10 col-lg-7 col-xl-6"
                  style={{"position": "relative"}}>
-                <HomeComponent/>
+                {/*this is the post  list*/}
+                <TweetList/>
+
             </div>
             <div className="col-2 d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                <WhoToFollowList/>
+                <PostSummaryList/>
+
             </div>
         </div>
     );

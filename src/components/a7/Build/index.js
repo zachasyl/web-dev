@@ -5,10 +5,15 @@ import {Route} from "react-router-dom";
 import HomeScreen from "./HomeScreen/HomeScreen.js";
 import ExploreScreen from "./ExploreScreen/ExploreScreen.js";
 import who from "../../../reducers/who.js";
-import {createStore} from "redux";
+
+
+import tweets from "../../../reducers/tweets.js";
+import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 
-const store = createStore(who);
+const reducer = combineReducers({tweets: tweets, who})
+const store = createStore(reducer);
+
 
 const Build = () => {
     return(
