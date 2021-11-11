@@ -2,7 +2,6 @@ import React from "react";
 import {useSelector} from "react-redux";
 import TweetListItem from "./TweetListItem";
 
-
 //The WhoToFollowList function should iterate over the who array
 //and use the function WhoToFollowListItem to generate the list
 //shown above.

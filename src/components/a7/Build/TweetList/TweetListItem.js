@@ -1,69 +1,57 @@
+
+
+
+
+import React from "react";
+import TweetStats from "./TweetStats";
 import {useDispatch} from "react-redux";
 
-const TweetListItem = (
-    {
-        tweet = {
-            "userName": "Web Development",
-            "handle": "ReactJS",
-            "time": "ReactJS",
-            "title": "ReactJS",
-            "profileImage": "ReactJS",
-            "image": "ReactJS",
-            "postTitle": "ReactJS",
-            "synopsis": "ReactJS",
-            "comments": "ReactJS",
-            "retweet": "ReactJS",
-            "likes": "ReactJS",
-            "download": "ReactJS",
-        }
-    }) =>{
+const TweetListItem = ({tweet}) => {
     const dispatch = useDispatch();
     const deleteTweetClickHandler = () => {
         dispatch({type: 'delete-tweet', tweet})
-    };
-
-
+    }
     return(
-    <div className = "ms-5">
+        <li className="list-group-item">
+            <table>
+                <tr>
+                    <td className="align-text-top">
+                        <img className="rounded-circle wd-avatar-image"
+                             src={tweet['logo-image']}/>
+                    </td>
+                    <td className="ps-3" style={{width: '100%'}}>
+                        <i onClick={deleteTweetClickHandler}
+                           className="fa fa-remove fa-pull-right">Delete</i>
 
+                        <span className="fw-bold">{tweet.userName}</span>
+                        {tweet.verified && <i className="ms-1 fas fa-badge-check"></i>}
+                        <span className="ms-1 text-secondary">@{tweet.handle}</span>
+                        <div>
+                            {tweet.tweet}
+                        </div>
+                        {
+                            tweet.attachments && tweet.attachments.image &&
+                            <img src={tweet.attachments.image}
+                                 className="mt-2 wd-border-radius-20px"
+                                 style={{width: "100%"}}/>
+                        }
+                        {
+                            tweet.attachments && tweet.attachments.video &&
+                            <iframe width="100%" height="350px"
+                                    className="mt-2 wd-border-radius-20px"
+                                    style={{width: "100%"}}
+                                    src={`https://www.youtube.com/embed/${tweet.attachments.video}`}
+                                    title="YouTube video player" frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen></iframe>
+                        }
+                        {/*{JSON.stringify(tweet)}*/}
+                        <TweetStats tweet={tweet}/>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    );
+};
 
-<div className="">
-
-        <div className = "bookmarks"><img className = "bookmark-image" src = {tweet.profileImage}  ></img></div>
-        <p className="handle-margin">{tweet.userName} <span className="handle">{tweet.handle} </span> </p>
-        <p className = "handle-margin" >
-           {tweet.title}
-
-        </p>
-        </div>
-    <div className="big-border mb-2">
-            <div className = "bookmarks  ">
-                <img className = "big-image left-margin top-margin-12 " src = {tweet.image}  ></img>
-                <p className = "left-margin white-and-bold no-top-bottom-margin" >
-                   {tweet.postTitle}
-                </p>
-                <p className = "left-margin no-top-bottom-margin gray " >
-                   {tweet.synopsis}
-                </p>
-            </div>
-
-     </div>
-     <div className = "no-top-bottom-margin gray ">
-
-        <span className = "  ps-5 ms-5 far fa-heart ">{tweet.comments}</span>
-
-        <span className = "  p-3 fas fa-retweet ">{tweet.retweet}</span>
-
-        <span className = "  p-3 far fa-heart">{tweet.likes}</span>
-
-        <span className = "p-3 fas fa-download">{tweet.download}</span>
-
-
-         <i onClick={deleteTweetClickHandler}
-            className="fa fa-remove fa-pull-right">HELLO</i>
-      </div>
-
-    </div>
-          );
-      }
 export default TweetListItem;

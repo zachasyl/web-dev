@@ -23,7 +23,6 @@ const WhatsHappening = () => {
         </button>
 
     <textarea value={whatsHappening} className = ""
-
               onChange={(event) =>
                   setWhatsHappening(event.target.value)}>
     </textarea>

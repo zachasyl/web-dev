@@ -1,5 +1,6 @@
 import posts from '../data/tweets.json';
 
+
 const tweets = (state = posts, action) => {
     switch (action.type) {
         case 'like-tweet':
@@ -19,6 +20,7 @@ const tweets = (state = posts, action) => {
             });
             break;
 
+
         case 'delete-tweet':
             return state
                 .filter(tweet => tweet._id !== action.tweet._id);
@@ -36,9 +38,12 @@ const tweets = (state = posts, action) => {
                 "avatar-image": "../../../images/react-blue.png",
                 "logo-image": "../../../images/react-blue.png",
 
+                "stats": {
                     "comments": 123,
                     "retweets": 234,
                     "likes": 345
+                },
+
 
             };
             return([
