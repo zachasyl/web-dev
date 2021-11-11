@@ -1,3 +1,4 @@
+import {useDispatch} from "react-redux";
 
 const TweetListItem = (
     {
@@ -16,9 +17,15 @@ const TweetListItem = (
             "download": "ReactJS",
         }
     }) =>{
+    const dispatch = useDispatch();
+    const deleteTweetClickHandler = () => {
+        dispatch({type: 'delete-tweet', tweet})
+    };
 
-     return(
+
+    return(
     <div className = "ms-5">
+
 
 <div className="">
 
@@ -26,6 +33,7 @@ const TweetListItem = (
         <p className="handle-margin">{tweet.userName} <span className="handle">{tweet.handle} </span> </p>
         <p className = "handle-margin" >
            {tweet.title}
+
         </p>
         </div>
     <div className="big-border mb-2">
@@ -49,6 +57,10 @@ const TweetListItem = (
         <span className = "  p-3 far fa-heart">{tweet.likes}</span>
 
         <span className = "p-3 fas fa-download">{tweet.download}</span>
+
+
+         <i onClick={deleteTweetClickHandler}
+            className="fa fa-remove fa-pull-right">HELLO</i>
       </div>
 
     </div>
