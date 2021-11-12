@@ -7,10 +7,10 @@ import Practice from "./components/a6/Practice";
 import Practice7 from "./components/a7/Practice";
 import Build from "./components/a6/Build";
 import Build7 from "./components/a7/Build";
+import profile from "./components/a7/Build/ProfileScreen/ProfileScreen"
 
 import HomeScreen from  "./components/a6/Build/HomeScreen/HomeScreen.js";
 import ExploreScreen from  "./components/a6/Build/ExploreScreen/ExploreScreen.js";
-
 
 import who from "./reducers/who";
 import {Provider} from "react-redux";
@@ -19,6 +19,8 @@ import {Provider} from "react-redux";
 
 
 import {BrowserRouter, Route} from "react-router-dom";
+import ProfileScreen from "./components/a7/Build/ProfileScreen/ProfileScreen";
+import EditScreen from "./components/a7/Build/ProfileScreen/EditScreen";
 
 
 function App() {
@@ -47,6 +49,12 @@ function App() {
                     </Route>
                     <Route path="/a7/twitter">
                         <Build7/>
+                    </Route>
+                    <Route path="/a7/twitter/profile">
+                        <ProfileScreen/>
+                    </Route>
+                    <Route path="/a7/twitter/edit">
+                        <EditScreen/>
                     </Route>
 
 

@@ -1,3 +1,6 @@
+import '../rightcol.css';
+
+
 const PostSummaryItem = (
     {
         posts = {
@@ -19,8 +22,9 @@ const PostSummaryItem = (
                     <div className = "row">
                     <div className="col ">
                         <div className = "gray">{posts.topic}</div>
-                        <div className><span className = "bold">{posts.userName}</span> <i className="fas fa-check-circle"></i> <span className = "gray">{posts.time}</span></div>
+                        <div className><span className = "bold">{posts.userName}</span> <i className="fas fa-check-circle"></i> </div>
                         <div className = "bold">{posts.title}</div>
+
                     </div>
                     <div className="col ms-5 ">
 

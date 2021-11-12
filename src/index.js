@@ -40,7 +40,8 @@ function Message(props) {
 
 ReactDOM.render(
 
-    <div> <HelloWorld/>,
+    <div>
+        {/*<HelloWorld/>,*/}
         <App />,
 
         {/*<Message message="Hello World 2"/>*/}

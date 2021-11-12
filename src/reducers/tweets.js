@@ -4,7 +4,7 @@ import posts from '../data/tweets.json';
 const tweets = (state = posts, action) => {
     switch (action.type) {
         case 'like-tweet':
-            return state.tweets.map(tweet => {
+            return state.map(tweet => {
                 if(tweet._id === action.tweet._id) {
                     if(tweet.liked === true) {
                         tweet.liked = false;
@@ -39,9 +39,9 @@ const tweets = (state = posts, action) => {
                 "logo-image": "../../../images/react-blue.png",
 
                 "stats": {
-                    "comments": 123,
-                    "retweets": 234,
-                    "likes": 345
+                    "comments": 0,
+                    "retweets": 0,
+                    "likes": 0
                 },
 
 

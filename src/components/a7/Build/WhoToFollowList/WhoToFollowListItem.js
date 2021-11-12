@@ -15,7 +15,7 @@ const WhoToFollowListItem = (
            <div className="col  mt-2 d-none d-lg-inline-block position-relative me-3 ">
                   <ul className="">
                       <li className="list-group-item ">
-                          <span className = "bold-only">Who to follow</span>
+                          <span className = "bold-only">What's Happening</span>
                       <li className="list-group-item absolute">
                       <span>
                            <img src = {who.avatarIcon} width = "50px" height = "50px" className = " mt-2 mb-2 "></img>

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-
+import '../rightcol.css'
 
 
 import {useDispatch} from "react-redux";
@@ -14,19 +14,34 @@ const WhatsHappening = () => {
             tweet: whatsHappening
         });
     }
-        return(
+    return(
+        <>
+            <div>
+                <tr>
+                    <td style={{verticalAlign: 'top'}}>
+                        <img src={'../../../images/react.png'}
+                             className="rounded-circle"
+                             style={{width: '20px', margin: '16px'}}/>
+                    </td>
+                    <td style={{width: "100%"}}>
+                        <textarea value={whatsHappening}
+                                  onChange={(event) => setWhatsHappening(event.target.value)}
+                                  className="form-control"
+                                  style={{width: "100%", color: "white",
+                                      padding: "0px",
+                                      paddingTop: "15px",
+                                      backgroundColor: "black"}}
+                                  placeholder="What's happening?"></textarea>
+                        <hr/>
 
-
-    <div>
-        <button onClick={tweetClickHandler}>
-            Tweet
-        </button>
-
-    <textarea value={whatsHappening} className = ""
-              onChange={(event) =>
-                  setWhatsHappening(event.target.value)}>
-    </textarea>
-    </div>
-);
+                        <button onClick={tweetClickHandler} className="btn-primary fa-pull-right rounded-pill">
+                            Tweet
+                        </button>
+                    </td>
+                </tr>
+            </div>
+        </>
+    );
 }
+
 export default WhatsHappening;
