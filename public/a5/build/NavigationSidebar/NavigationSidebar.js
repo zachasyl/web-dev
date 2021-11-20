@@ -17,9 +17,16 @@ const NavigationSidebar = (active) => {
             <div class="list-group">
                 <a class="list-group-item" href="/">
                     <i class="fab fa-twitter"></i></a>
-                    <li class="list-group-item inactive-Home "><i class="fas fa-home no-decoration"></i> <span class = "d-none d-lg-inline-block"><a class = "no-decoration" href = "../HomeScreen/home.html" >Home</a></span></li>
-                    <li class="list-group-item inactive-Explore "><i class="fas fa-hashtag"></i>  <span class = "d-none d-lg-inline-block"><a class = "no-decoration" href="../ExploreScreen/explore.html">Explore</a></span></li></li>
-                    <li class="list-group-item"><i class="fas fa-bell"></i>  <span class = "d-none d-lg-inline-block">Notifications</span></li></li>
+                    <a class="list-group-item ${active === 'home' ? 'active' : ''}"
+                                    href="../HomeScreen/home.html">
+                                    <i class="fa fa-home"></i>
+                                    <span class="d-none d-xl-inline">Home</span>
+                     </a>
+ <a class="list-group-item ${active === 'explore' ? 'active' : ''}"
+                href="../ExploreScreen/explore.html">
+                <i class="fa fa-hashtag"></i>
+                <span class="d-none d-xl-inline">Explore</span>
+            </a>                    <li class="list-group-item"><i class="fas fa-bell"></i>  <span class = "d-none d-lg-inline-block">Notifications</span></li></li>
                     <li class="list-group-item"><i class="fas fa-envelope"></i>  <span class = "d-none d-lg-inline-block">Messages</span></li></li>
 
                     <li class="list-group-item "><i class="fas fa-bookmark"></i>  <span class = "d-none d-lg-inline-block">Bookmarks</span></li></li>

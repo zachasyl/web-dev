@@ -1,0 +1,22 @@
+[
+{
+    "firstName": "zach",
+    "lastName": "sylvane",
+    "handle": "zachasyl",
+    "banner" : "../../../Images/banner.jpg",
+    "avatar" : "../../../Images/react.png",
+
+    "tweets" : "500",
+    "synopsis" : "Currently taking web development and artificial intelligence...",
+
+
+
+
+    "location" : "Boston, MA",
+    "DOB" : "March 20, 1990",
+    "following" : "5",
+    "followers" : "10"
+
+
+}
+]

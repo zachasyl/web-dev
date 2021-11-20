@@ -18,14 +18,14 @@ const NavigationSidebar = (
 
 
                  <Link to="/a6/twitter/home"
-                      className={`list-group-item ${active === 'home' ? 'active' : 'explore'}`}>
-
-                      <i className="fas fa-home no-decoration"></i> Home
+                      className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
+                     <i className="fa fa-home"></i>
+                     <span className="d-none d-xl-inline">Home</span>
                  </Link>
-                 <Link to="/a6/twitter/explore"
-                       className={`list-group-item ${active === 'explore' ? 'active' : 'home'}`}>
-
-                       <i className="fas fa-hashtag"></i> Explore
+                  <Link to="/a6/twitter/explore"
+                     className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
+                     <i className="fa fa-hashtag"></i>
+                     <span className="d-none d-xl-inline">Explore</span>
                  </Link>
 
 

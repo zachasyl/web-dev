@@ -7,7 +7,16 @@ import Practice from "./components/a6/Practice";
 import Practice7 from "./components/a7/Practice";
 import Build from "./components/a6/Build";
 import Build7 from "./components/a7/Build";
+
+
+import Practice8 from "./components/a8/Practice";
+import Build8 from "./components/a8/Build/";
+
+import ExploreScreen8 from  "./components/a8/Build/ExploreScreen/ExploreScreen.js";
+
 import profile from "./components/a7/Build/ProfileScreen/ProfileScreen"
+
+import HomeScreen8 from  "./components/a8/Build/HomeScreen/HomeScreen.js";
 
 import HomeScreen from  "./components/a6/Build/HomeScreen/HomeScreen.js";
 import ExploreScreen from  "./components/a6/Build/ExploreScreen/ExploreScreen.js";
@@ -16,11 +25,14 @@ import who from "./reducers/who";
 import {Provider} from "react-redux";
 
 
-
-
 import {BrowserRouter, Route} from "react-router-dom";
 import ProfileScreen from "./components/a7/Build/ProfileScreen/ProfileScreen";
 import EditScreen from "./components/a7/Build/ProfileScreen/EditScreen";
+
+
+import ProfileScreen8 from "./components/a7/Build/ProfileScreen/ProfileScreen";
+import EditScreen8 from "./components/a7/Build/ProfileScreen/EditScreen";
+
 
 
 function App() {
@@ -32,7 +44,7 @@ function App() {
                     <Route path="/a6/hello" exact={true}>
                         <HelloWorld/>
                     </Route>
-                    <Route path={["/", "/a6", "/a6/practice"]} exact={true}>
+                    <Route path={["a6", "/a6/practice"]} exact={true}>
                         <Practice/>
                     </Route>
                     <Route path="/a6/build" exact={true}>
@@ -44,7 +56,13 @@ function App() {
                    <Route path="/a6/twitter/explore" exact={true}>
                         <ExploreScreen/>
                    </Route>
-                    <Route path={["/", "/a7", "/a7/practice"]} exact={true}>
+
+
+
+
+
+
+                    <Route path={["/a7", "/a7/practice"]} exact={true}>
                         <Practice7/>
                     </Route>
                     <Route path="/a7/twitter">
@@ -57,6 +75,27 @@ function App() {
                         <EditScreen/>
                     </Route>
 
+
+
+
+
+
+                    <Route path={["/a8", "/a8/practice"]} exact={true}>
+                        <Practice8/>
+                    </Route>
+                    <Route path="/a8/twitter/home">
+                        <Build8/>
+                    </Route>
+                    <Route path="/a8/twitter/profile">
+                        <ProfileScreen8/>
+                    </Route>
+                    <Route path="/a8/twitter/edit">
+                        <EditScreen8/>
+                    </Route>
+
+                    <Route path="/a8/twitter/explore" exact={true}>
+                        <ExploreScreen8/>
+                    </Route>
 
 
                 </div>

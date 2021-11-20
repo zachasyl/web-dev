@@ -7,7 +7,6 @@ import HomeScreen from "./HomeScreen/HomeScreen.js";
 import ExploreScreen from "./ExploreScreen/ExploreScreen.js";
 import who from "../../../reducers/who.js";
 
-
 import tweets from "../../../reducers/tweets.js";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
@@ -23,6 +22,7 @@ const Build = () => {
             <div>
                 <Route path={["/", "/a7/twitter/home"]} exact={true} component={HomeScreen}/>
                 <Route path="/a7/twitter/explore" exact={true} component={ExploreScreen}/>
+
             </div>
         </Provider>
 
