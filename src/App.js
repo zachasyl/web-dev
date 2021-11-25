@@ -7,9 +7,13 @@ import Practice from "./components/a6/Practice";
 import Practice7 from "./components/a7/Practice";
 import Build from "./components/a6/Build";
 import Build7 from "./components/a7/Build";
-
+import a9practice from "./components/a9/";
 
 import Practice8 from "./components/a8/Practice";
+
+import A9 from "./components/a9/Practice";
+
+
 import Build8 from "./components/a8/Build/";
 
 import ExploreScreen8 from  "./components/a8/Build/ExploreScreen/ExploreScreen.js";
@@ -32,6 +36,7 @@ import EditScreen from "./components/a7/Build/ProfileScreen/EditScreen";
 
 import ProfileScreen8 from "./components/a7/Build/ProfileScreen/ProfileScreen";
 import EditScreen8 from "./components/a7/Build/ProfileScreen/EditScreen";
+import {Link} from "react-router-dom"
 
 
 
@@ -40,6 +45,12 @@ function App() {
 
             <BrowserRouter>
                 <div className="container">
+                    <Link to="/a8/practice">A8</Link> |
+                    <Link to="/a9/practice">A9</Link>
+
+                    <Link to="/a8/practice">A8</Link> |
+                    <Link to="/a9/practice">A9</Link>
+
 
                     <Route path="/a6/hello" exact={true}>
                         <HelloWorld/>
@@ -83,6 +94,11 @@ function App() {
                     <Route path={["/a8", "/a8/practice"]} exact={true}>
                         <Practice8/>
                     </Route>
+                    <Route path="/a9">
+                        <A9/>
+                    </Route>
+
+
                     <Route path="/a8/twitter/home">
                         <Build8/>
                     </Route>
@@ -96,6 +112,9 @@ function App() {
                     <Route path="/a8/twitter/explore" exact={true}>
                         <ExploreScreen8/>
                     </Route>
+
+
+
 
 
                 </div>

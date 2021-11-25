@@ -12,6 +12,7 @@ module.exports = (app) => {
         movies = movies.filter(movie => movie._id !== id);
         res.json(movies);
     };
+
     const createMovie = (req, res) => {
         const movie = req.body;
         movie['_id'] = (new Date()).getTime();

@@ -1,24 +1,19 @@
 import React, {useEffect, useState} from "react";
 const MovieApiClient = () => {
-
-    const [movie, setMovie] = useState({title: '', _id: 2.5});
+    const [movie, setMovie] = useState({title: '', rating: 2.5});
     const onMovieTitleChange = (event) =>
         setMovie({...movie, title: event.target.value});
-    const createMovieClickHandler = () => {
-        const newMovie = {
-                        ...movie,
-                        _id: (new Date()).getTime().toString()
-                    };
+    const createMovieClickHandler = () =>
         fetch('http://localhost:4000/api/movies', {
             method: 'POST',
-            body: JSON.stringify(newMovie),
+            body: JSON.stringify(movie),
             headers: {
                 'content-type': 'application/json'
             }
         })
             .then(response => response.json())
             .then(movies => setMovies(movies));
-    }
+
     const deleteMovie = (movie) =>
 
         fetch(`http://localhost:4000/api/movies/${movie._id}`, {

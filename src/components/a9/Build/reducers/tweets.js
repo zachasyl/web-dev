@@ -1,6 +1,6 @@
 import posts from '../data/tweets.json';
 
-// note that we can change posts to [] and we will get the initial tweets from tweets.json in the web-dev-node
+
 const tweets = (state = posts, action) => {
     switch (action.type) {
         case 'fetch-all-tweets':
@@ -34,7 +34,7 @@ const tweets = (state = posts, action) => {
             const tweet = {
                 _id: (new Date()).getTime() + '',
                 "topic": "Web Development",
-                "userName": "ReactJZ",
+                "userName": "ReactJS",
                 "verified": false,
                 "handle": "ReactJS",
                 "time": "2h",
@@ -43,19 +43,20 @@ const tweets = (state = posts, action) => {
                 "logo-image": "../../../images/react-blue.png",
 
                 "stats": {
-                    "comments": "123",
-                    "retweets": "234",
-                    "likes": "345"
+                    "comments": 0,
+                    "retweets": 0,
+                    "likes": 0
                 },
 
 
             };
-            return ([
-                    tweet,
-                    ...state,
-                ]
-            );
-
+            return([
+                {
+                    ...tweet,
+                    "tweet": action.tweet
+                },
+                ...state
+            ]);
             break;
         default:
             return(state);
