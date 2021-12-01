@@ -5,11 +5,11 @@ let movies = [
 ];
 
 const deleteMovie = (req, res) => {
-    const id = req.params['mid'];
+    const id = req.params['_id'];
     movies = movies.filter(m => m._id !== id);
     res.json(movies);
 };
-app.delete('/api/movies/:mid', deleteMovie);
+app.delete('/api/movies/:_id', deleteMovie);
 
 module.exports = (app) => {
     const getAllMovies = (req, res) => res.json(movies);

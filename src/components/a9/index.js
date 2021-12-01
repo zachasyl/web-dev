@@ -1,7 +1,7 @@
 import React from "react";
 import {Route} from "react-router-dom";
 import Practice from "./Practice";
-import Twitter from "./Build";
+import Twitter from "./Build/";
 
 const A9 = () => {
     return(

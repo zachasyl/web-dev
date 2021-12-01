@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 const MovieApiClient = () => {
-    const [movie, setMovie] = useState({title: '', rating: 2.5});
+    const [movie, setMovie] = useState({title: '', rating: 2.5, _id: 5});
     const onMovieTitleChange = (event) =>
         setMovie({...movie, title: event.target.value});
     const createMovieClickHandler = () =>

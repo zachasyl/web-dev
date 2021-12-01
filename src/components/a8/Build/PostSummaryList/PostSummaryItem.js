@@ -3,14 +3,24 @@ import '../rightcol.css';
 
 const PostSummaryItem = (
     {
-        posts = {
-            "topic": "Web Development",
-            "userName": "ReactJS",
-            "time": "2h",
-            "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-            "image": "../../../images/react-blue.png"
-        }
-    }
+        posts = { topic: String,
+            posted: {type: Date, defaultValue: Date.now},
+            userName: String,
+            verified: {type: Boolean, defaultValue: false},
+            handle: String,
+            title: String,
+            tweet: String,
+            attachments: {
+                image: String
+            },
+            time: String,
+            "logo-image": String,
+            "avatar-image": String,
+            stats: {
+                comments: {type: Number, defaultValue: 9},
+                retweets: {type: Number, defaultValue: 0},
+                likes: {type: Number, defaultValue: 0}
+    }}}
 ) => {
 
      return(

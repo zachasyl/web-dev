@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import {postNewTweet, fetchAllTweets} from "../../services/twitterService";
+import {postNewTweet, fetchAllTweets}
+    from "../../services/twitterService";
 
 import '../rightcol.css';
 
@@ -10,7 +11,7 @@ const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tweetClickHandler = () => {
-        dispatch({type: 'create-tweet',
+        postNewTweet(dispatch, {
             tweet: whatsHappening
         });
 

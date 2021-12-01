@@ -202,7 +202,7 @@ console.log(result1);
 const result2 = `2 + 3 = ${2 + 3}`;
 console.log(result2);
 
-const username = "alice";
+let username = "alice";
 const greeting1 = `Welcome home ${username}`;
 console.log(greeting1);
 

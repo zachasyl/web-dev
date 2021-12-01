@@ -13,8 +13,9 @@ import Practice8 from "./components/a8/Practice";
 
 import A9 from "./components/a9/Practice";
 
-
+import A9B from "./components/a9/Build/";
 import Build8 from "./components/a8/Build/";
+import A9explore from  "./components/a9/Build/ExploreScreen/ExploreScreen.js";
 
 import ExploreScreen8 from  "./components/a8/Build/ExploreScreen/ExploreScreen.js";
 
@@ -46,10 +47,10 @@ function App() {
             <BrowserRouter>
                 <div className="container">
                     <Link to="/a8/practice">A8</Link> |
-                    <Link to="/a9/practice">A9</Link>
 
                     <Link to="/a8/practice">A8</Link> |
                     <Link to="/a9/practice">A9</Link>
+                    <Link to="/a9/build">A9B</Link>
 
 
                     <Route path="/a6/hello" exact={true}>
@@ -94,13 +95,19 @@ function App() {
                     <Route path={["/a8", "/a8/practice"]} exact={true}>
                         <Practice8/>
                     </Route>
-                    <Route path="/a9">
+                    <Route path="/a9/Practice">
                         <A9/>
                     </Route>
 
 
                     <Route path="/a8/twitter/home">
                         <Build8/>
+                    </Route>
+                    <Route path="/a9/twitter/home">
+                        <A9B/>
+                    </Route>
+                    <Route path="/a9/twitter/explore">
+                        <A9explore/>
                     </Route>
                     <Route path="/a8/twitter/profile">
                         <ProfileScreen8/>

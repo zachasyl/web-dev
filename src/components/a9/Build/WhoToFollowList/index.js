@@ -1,24 +1,35 @@
-import React from "react";
-import WhoToFollowListItem from "./WhoToFollowListItem";
-import who from "./who"
-
-//The WhoToFollowList function should iterate over the who array
-//and use the function WhoToFollowListItem to generate the list
-//shown above.
-
-const WhoToFollowList = () => {
-    return (
-            <ul class="list-group">
-             {
-                  who.map(who => {
-                      return(
-                          <WhoToFollowListItem who={who}/> );
-                  })
-              }
-
-            </ul>
-); }
-export default WhoToFollowList;
+// import React, {useEffect} from "react";
+// import WhoToFollowListItem from "./WhoToFollowListItem";
+// import who from "./who"
+// import {useDispatch, useSelector} from "react-redux";
+// import {findAllWho} from "../services/who-service";
+// import TweetListItem from "../TweetList/TweetListItem";
+//
+// //The WhoToFollowList function should iterate over the who array
+// //and use the function WhoToFollowListItem to generate the list
+// //shown above.
+//
+// const WhoToFollowList = () => {
+//     const whos = useSelector(SelectAllWho);
+//     const dispatch = useDispatch();
+//     useEffect(() => findAllWho(dispatch), [])
+//
+//     return (
+//         <ul class="list-group">
+//             {
+//                 who.map(tweet => {
+//                     return(
+//                         <TweetListItem whos={whos}/> );
+//                 })
+//             }
+//
+//         </ul>
+//     ); }
+//
+//
+//
+//
+// export default WhoToFollowList;
 
 
 
