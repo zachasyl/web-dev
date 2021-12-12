@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Select from '@mui/material/Select';
@@ -15,7 +16,6 @@ import List from "./list.js";
 import names from './names.json';
 import NavigationExample from './NavigationExample.js'
 import ReduxExamples from "./components/lectures/w8/ReduxExamples";
-import Projectapp from "./components/project/Projectapp";
 import * as PropTypes from "prop-types";
 import HelloWorld from "./hello"
 import Hello from "./components/lectures/w8/Hello";
@@ -46,6 +46,7 @@ ReactDOM.render(
     <div>
         {/*<HelloWorld/>,*/}
         <App />,
+        {/* <Projectapp/>,*/}
 
         {/*<Message message="Hello World 2"/>*/}
         {/*<IamStateless message X={2} Y={2}/>*/}
