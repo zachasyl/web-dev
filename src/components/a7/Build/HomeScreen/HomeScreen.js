@@ -1,9 +1,9 @@
 import React from "react";
-import NavigationSidebar from "../NavigationSidebar";
+import NavigationSidebar from "../NavigationSidebar.js";
 import TweetList from "../TweetList/index.js";
 import WhoToFollowList from "../WhoToFollowList";
-import PostSummaryList from "../PostSummaryList";
-import WhatsHappening from "../WhatsHappening";
+import PostSummaryList from "../PostSummaryList.js";
+import WhatsHappening from "../WhatsHappening.js";
 
 const HomeScreen = (
  {
